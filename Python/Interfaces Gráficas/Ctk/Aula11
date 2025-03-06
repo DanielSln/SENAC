@@ -1,0 +1,40 @@
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('350x410')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+pagina1 = CTkFrame(tela, width=340, height=400, bg_color="white", fg_color="#c9c8c7")
+pagina1.pack(pady=20)
+
+label_pag1 = CTkLabel(pagina1, text="Bem-vindo ao App de Informações!", font=("Arial", 15, "bold"), text_color="black")
+label_pag1.place(relx=0.5, rely=0.2, anchor="center")
+
+label2 = CTkLabel(pagina1, text="Clique em CONTINUAR para ver suas informações pessoais", font=("Arial", 12), text_color="black")
+label2.place(relx=0.5, rely=0.3, anchor="center")
+
+def navegar():
+    pagina1.forget()
+
+    pagina2 = CTkFrame(tela, width=340, height=400, bg_color="white", fg_color="#c9c8c7")
+    pagina2.pack(pady=20)
+
+    label_pag2 = CTkLabel(pagina2, text="Informações Pessoais", font=("Arial", 15, "bold"), text_color="black")
+    label_pag2.place(relx=0.5, rely=0.1, anchor="center")
+
+    label2_pag2 = CTkLabel(pagina2, text="Nome: Daniel Solano\nIdade: 17 anos\nEmail: danielmacaco@gmail.com", font=("Arial", 12), text_color="black")
+    label2_pag2.place(relx=0.5, rely=0.3, anchor="center")
+
+    def voltar():
+        pagina2.forget()
+        pagina1.pack(pady=10)
+        
+    back = CTkButton(pagina2, text="Voltar", width=100, command=voltar)
+    back.place(x=10, y=330)
+
+botao = CTkButton(pagina1, text="Continuar", width=100, command=navegar)
+botao.place(x=230, y=330)
+
+tela.mainloop()

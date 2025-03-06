@@ -1,0 +1,19 @@
+#Gerenciador de Geometria Grid
+from tkinter import *
+
+janela = Tk()
+janela.geometry('200x200')
+
+vermelho = Button(janela, text="Vermelho", fg="red")
+vermelho.grid(column = 1, row = 0)
+
+verde = Button(janela, text="Verde", fg="green")
+verde.grid(column = 0, row = 0)
+
+azul = Button(janela, text="Azul", fg="blue")
+azul.grid(column = 2, row = 1)
+
+preto = Button(janela, text="Preto", fg="black")
+preto.grid(column = 1, row = 1)
+
+janela.mainloop()

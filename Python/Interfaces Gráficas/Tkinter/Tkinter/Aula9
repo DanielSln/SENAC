@@ -1,0 +1,25 @@
+#Criando uma Listbox
+from tkinter import *
+janela = Tk()
+janela.title('Listbox')
+janela.geometry('300x300')
+
+def test():
+    listbox.delete()
+
+listbox = Listbox(janela, height = 0)
+listbox.grid(row = 0, column = 0)
+
+listbox.insert(0, "PHP")
+listbox.insert(1, "PYTHON")
+listbox.insert(2, "MySQL")
+
+item = ["Js", "Java", "C++"]
+
+for i in item:
+    listbox.delete(END, i)
+
+b = Button(janela, text="Imprimir", command=test)
+b.grid(row = 1, column = 0)
+
+janela.mainloop()

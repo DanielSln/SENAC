@@ -1,0 +1,24 @@
+#Criando um botão
+from tkinter import *
+janela = Tk()
+janela.title("Criando um botão")
+janela.geometry("321x502")
+
+label = Label(janela, text="Primeiro botão")
+label.grid(column = 0, row = 0)
+
+#Mudando a cor de um botão
+#bot = Button(janela, text= "Clique Aqui!", bg="green", 
+ #            fg="white", width="10", height="3")
+#bot.grid(column = 1, row = 0)
+
+#Ação caso clique no botão
+def ola():
+    print("Olá, Mundo! eu sou o Daniel")
+    label.configure(text="Olá, Mundo, eu sou o Daniel !!")
+
+
+bot = Button(janela, text= "Clique Aqui", bg="green", fg="white", command=ola)
+bot.grid(column=1, row=0)
+
+janela.mainloop()

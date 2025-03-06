@@ -1,0 +1,51 @@
+#Criando um CheckButton
+from tkinter import *
+
+janela = Tk()
+janela.title("CheckButton")
+janela.geometry('300x300')
+
+#Com números inteiros
+def testI():
+    print("Valor do CheckButton Faixa Salarial: ", stado.get())
+
+stado = IntVar() # Testando números inteiros 
+check1 = Checkbutton(janela, text = "Menos de R$ 1.500", var = stado,
+                    onvalue = 1, offvalue = 0, command = testI)
+check1.grid(row = 0, column = 0)
+check2 = Checkbutton(janela, text = "R$ 1.500 - R$3.000", var = stado,
+                    onvalue = 2, offvalue = 0, command = testI)
+check2.grid(row = 1, column = 0)
+check3 = Checkbutton(janela, text = "R$ 3.000 - R$6.000", var = stado,
+                    onvalue = 3, offvalue = 0, command = testI)
+check3.grid(row = 2, column = 0)
+check4 = Checkbutton(janela, text = "Acima de R$ 6.000", var = stado,
+                     onvalue = 4, offvalue = 0, command = testI)
+check4.grid(row = 3, column = 0)
+
+
+#Com strings 
+def test():
+    print("Valor do CheckButton Finalizar Formulário: ", estado.get())
+
+estado = StringVar(value="Not")  #Testando com Strings
+
+chek = Checkbutton(janela, text = "Finalizar Formulário?", var = estado,
+                   onvalue = "Yes", offvalue = "Not", command = test)
+chek.grid(row = 7, column = 0)
+
+
+#Com booleanos
+
+def testB():
+    print("Valor do CheckButton Booleano: ", tado.get())
+
+tado = BooleanVar()
+
+shek = Checkbutton(janela, text = "Escolha", var = tado,
+                   onvalue = 0, offvalue = 1, command = testB)
+shek.grid(row = 5, column = 0)
+
+tado.set(value = 1)
+
+janela.mainloop()

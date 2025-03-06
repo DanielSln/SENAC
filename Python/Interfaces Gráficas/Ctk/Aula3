@@ -1,0 +1,19 @@
+#Aprendendo a utilizar o Pack
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+botao1 = CTkButton(tela, width=200, height = 30, text="Botão 1", bg_color="white")
+botao1.pack(pady = 20)
+
+botao2 = CTkButton(tela, width=200, height = 30, text="Botão 2", bg_color="white")
+botao2.pack(pady = 20)
+
+botao3 = CTkButton(tela, width=200, height = 30, text="Botão 3", bg_color="white")
+botao3.pack(pady = 20)
+
+tela.mainloop()

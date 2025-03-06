@@ -1,0 +1,15 @@
+#RadioButton e SwitchButton
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+radio = CTkRadioButton(tela, text="Aceito!", text_color="white")
+radio.pack(pady=20)
+
+switch = CTkSwitch(tela, text="Ligar", text_color="white", button_color="black", hover=None                                                             )
+switch.pack()
+tela.mainloop()

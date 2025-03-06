@@ -1,0 +1,25 @@
+#Como criar um frame
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('350x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+frame1 = CTkFrame(tela, width=300, height=360, fg_color="blue", bg_color="black")
+frame1.place(x=25, y=20)
+
+frame2 = CTkFrame(frame1, width=280, height=20, fg_color="red", bg_color="brown")
+frame2.place(x=10, y=10)
+
+frame3 = CTkFrame(frame1, width=140, height=310, fg_color="yellow", bg_color="blue")
+frame3.place(x=10, y=38)
+
+label1 = CTkLabel(frame2, text="Curso de Custom Tkinter", text_color="white", font=("Arial", 14, "bold"))
+label1.place(relx=0.5, rely=0.5, anchor="center")
+
+frame4 = CTkFrame(frame1, width=140, height=140, fg_color="orange", bg_color="blue", corner_radius=100)
+frame4.place(x=155, y=38)
+
+tela.mainloop()

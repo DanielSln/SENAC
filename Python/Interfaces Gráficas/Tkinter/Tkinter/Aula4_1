@@ -1,0 +1,19 @@
+#Gerenciador de Geometria Pack
+from tkinter import *
+janela = Tk()
+
+
+vermelho = Button(janela, text="vermelho", fg="red")
+vermelho.pack(side=TOP)
+
+verde = Button(janela, text="verde", fg="green")
+verde.pack(side=LEFT)
+
+amarelo = Button(janela, text="amarelo", fg="yellow", bg="black")
+amarelo.pack(side=RIGHT)
+
+azul = Button(janela, text="azul", fg="blue")
+azul.pack(side=BOTTOM)
+
+
+janela.mainloop()

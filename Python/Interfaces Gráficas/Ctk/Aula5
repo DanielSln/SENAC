@@ -1,0 +1,13 @@
+#Como criar um label no ctk
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+label = CTkLabel (tela, text="Curso de Custom Tkinter", bg_color="white", font=("Arial", 20, "bold"), text_color="black")
+label.pack()
+
+tela.mainloop()

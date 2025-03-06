@@ -1,0 +1,13 @@
+#Criar um botao
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+botao = CTkButton(tela, width=200, height = 30, text="Clique Aqui!", bg_color="white")
+botao.place(x = 100, y=1)
+
+tela.mainloop()

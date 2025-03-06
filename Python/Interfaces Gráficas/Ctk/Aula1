@@ -1,0 +1,12 @@
+#Criar uma janela
+
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+
+tela.mainloop()

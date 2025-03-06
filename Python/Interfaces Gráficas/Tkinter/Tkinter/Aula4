@@ -1,0 +1,8 @@
+#Gerentes de Geometria - Place
+from tkinter import *
+janela = Tk()
+
+a = Button(janela, text="Usando Place")
+a.place(x=0, y=0)
+
+janela.mainloop()

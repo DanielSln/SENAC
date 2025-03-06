@@ -1,0 +1,7 @@
+#Criando uma Janela
+
+from tkinter import *
+janela = Tk()
+janela.title("Olá Mundo!")
+janela.geometry("321x502")
+janela.mainloop()

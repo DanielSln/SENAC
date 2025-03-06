@@ -1,0 +1,29 @@
+#Criando um Combobox
+from tkinter import *
+from tkinter.ttk import *
+
+janela = Tk()
+janela.title("Criando um ComboBox")
+janela.geometry('300x300')
+
+
+#Combobox com números
+combo = Combobox (janela)
+combo["values"] = ("", 1, 2, "João", "Angola")
+combo.current(4) #Pré Definir um valor 
+combo.place(x = 75, y = 0)
+
+def obter_valor(eventObject):
+    v = combo.get()
+    lb = Label(janela, text = v)
+    lb.place(x = 75, y = 30)
+
+combo.bind("<<ComboboxSelected>>",obter_valor)
+
+#Combobox com strings 
+#combo2 = Combobox (janela)
+#combo2["values"] = ("João", "Daniel", "José", "Pedro")
+#combo2.place(x = 75, y = 100)
+
+
+janela.mainloop()

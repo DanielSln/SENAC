@@ -1,0 +1,15 @@
+#Criando um Label
+from tkinter import *
+janela = Tk()
+janela.title("Primeiro Label")
+janela.geometry('321x502')
+
+#Inserindo um texto e cores da fonte, background
+label = Label (janela, text= "Primeiro Label",
+              font= ("Arial Bold", 13), bg= '#1E1E1E')
+
+
+#Posições do tkinter
+label.grid(column = 0, row = 0)
+
+janela.mainloop()

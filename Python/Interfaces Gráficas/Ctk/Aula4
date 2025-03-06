@@ -1,0 +1,23 @@
+#Aprendendo a utilizar o grid
+
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+botao1 = CTkButton(tela, width=200, height = 30, text="Botão 1", bg_color="white")
+botao1.grid(row = 0, column = 0)
+
+botao2 = CTkButton(tela, width=200, height = 30, text="Botão 2", bg_color="white")
+botao2.grid(row = 0, column = 1)
+
+botao3 = CTkButton(tela, width=200, height = 30, text="Botão 3", bg_color="white")
+botao3.grid(row = 2, column = 2)
+
+botao4 = CTkButton(tela, width=200, height = 30, text="Botão 4", bg_color="white")
+botao4.grid(row = 0, column = 2)
+
+tela.mainloop()

@@ -1,0 +1,19 @@
+#Adicionar imagem
+from customtkinter import *
+from PIL import Image
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+imagem = CTkImage(Image.open("lixeira.png"), size=(100, 100))
+                                                                                                                  
+label = CTkLabel(tela, image=imagem, text="")
+label.pack(pady=20)
+
+imagem2 = CTkImage(Image.open("lixeira.png"), size=(30,30))
+botao = CTkButton(tela, text="Excluir", image=imagem2)
+botao.pack()
+tela.mainloop()

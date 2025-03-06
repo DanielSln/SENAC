@@ -1,0 +1,17 @@
+#CheckBox e ComboBox
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+checkbox = CTkCheckBox(tela, text="Lembrar de mim", text_color="white", border_color="black")
+checkbox.pack(pady=20)
+
+combobox = CTkComboBox(tela, values=["Tkinter", "CTk", "Flask", "Pandas"], width=300)
+combobox.set("Selecione")
+combobox.pack(pady=20)
+
+tela.mainloop()

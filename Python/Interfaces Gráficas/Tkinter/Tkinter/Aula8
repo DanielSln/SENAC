@@ -1,0 +1,24 @@
+#Criando um RadioButton
+from tkinter import *
+janela = Tk()
+janela.title('Radiobutton')
+janela.geometry('300x300')
+
+def obter():
+    print("O valor selecionado é: ", selecionado.get())
+
+selecionado = StringVar()
+
+rad_1 = Radiobutton(janela, text="Primeiro", value= "Primeiro",
+                    var=selecionado, command=obter)
+rad_1.grid(row = 0, column = 0)
+
+rad_2= Radiobutton(janela, text="Segundo", value= "Segundo",
+                    var=selecionado, command=obter)
+rad_2.grid(row = 0, column = 1)
+
+rad_3 = Radiobutton(janela, text="Terceiro", value= "Terceiro",
+                    var=selecionado, command=obter)
+rad_3.grid(row = 0, column = 2)
+
+janela.mainloop()

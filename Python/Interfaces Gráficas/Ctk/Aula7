@@ -1,0 +1,18 @@
+#Criar uma janela
+
+from customtkinter import *
+
+tela = CTk()
+tela.geometry('700x400')
+tela.title("Meu primeiro app")
+tela.configure(background = "white")
+tela.resizable(False, False )
+
+entry = CTkEntry(tela, placeholder_text="Digite seu nome", width=200)
+entry.pack(pady=20)
+
+textbox = CTkTextbox(tela, width=200, height=300)
+textbox.pack(pady=20)
+
+
+tela.mainloop()

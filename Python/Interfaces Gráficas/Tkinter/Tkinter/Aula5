@@ -1,0 +1,46 @@
+#Criando um entry
+from tkinter import *
+janela = Tk()
+janela.title("Entry")
+janela.geometry('240x240')
+janela.configure(bg='#1E1E1E')
+
+label = Label (janela, text = "Nome: ",fg = "white", bg = '#1E1E1E')
+label.grid(row = 0, column = 0)
+nome = Entry(janela, width = 30)
+nome.grid(row = 0, column = 1)
+
+label = Label(janela, text="Idade: ", fg = "white", bg = '#1E1E1E')
+label.grid(row = 1, column = 0)
+nascimento = Entry(janela, width = 30)
+nascimento.grid(row = 1, column = 1)
+
+label = Label(janela, text="Sexo: ", fg = "white", bg = '#1E1E1E')
+label.grid(row = 2, column = 0)
+sexo = Entry(janela, width = 30)
+sexo.grid(row = 2, column = 1)
+
+label = Label(janela, text="CPF: ", fg = "white", bg = '#1E1E1E')
+label.grid(row = 3, column = 0)
+cpf = Entry(janela, width = 30)
+cpf.grid(row = 3, column = 1)
+
+label = Label(janela, text = "Email: ", fg = "white", bg = '#1E1E1E')
+label.grid(row = 4, column = 0)
+email = Entry(janela, width = 30)
+email.grid(row = 4, column = 1)
+
+
+def finalizar_cadastro():
+    n = nome.get()
+    i = nascimento.get()
+    s = sexo.get()
+    c = cpf.get()
+    e = email.get()
+
+    print(n, i, s, c, e)
+
+b = Button(janela, text = "Finalizar Cadastro", bg = '#007BFF', fg="white", font=("Arial", 10, "bold"), command=finalizar_cadastro)
+b.grid(row=5, column=0, columnspan=2, pady=10)
+
+janela.mainloop()
