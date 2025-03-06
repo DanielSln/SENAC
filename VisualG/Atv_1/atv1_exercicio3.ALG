@@ -1,11 +1,11 @@
 Algoritmo "atv1_exercicio3"
 // Disciplina: UC3 ALGORITIMOS
 // Professor: Mateus de Paula Pereira 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Este programa irÃ¡ verificar a mÃ©dia de um aluno baseado em 3 notas
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 29/08/2024
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 nota1 : real
 nota2: real
 nota3: real
@@ -13,7 +13,7 @@ soma : real
 media : real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 escreva ("Informe o valor da sua primeira nota:")
 leia (nota1)
 
@@ -26,7 +26,7 @@ leia (nota3)
 soma <- nota1 + nota2 + nota3
 media <- soma / 3
 
-escreva ("Sua média final foi de:")
+escreva ("Sua mÃ©dia final foi de:")
 escreva (media)
 
 Fimalgoritmo
