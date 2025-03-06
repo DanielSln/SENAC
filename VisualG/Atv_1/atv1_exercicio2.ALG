@@ -1,11 +1,11 @@
 Algoritmo "Atv1_exercicio2"
 // Disciplina: UC3 ALGORITIMOS
 // Professor: Mateus de Paula Pereira 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Este programa irÃ¡ converter Celsius em Fahrenheit
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 29/08/2024
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 Celsius : real
 Tf: real
 C1: real
@@ -14,7 +14,7 @@ soma : inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
  C1 <- 1.8
  C2 <- 32
 
@@ -23,7 +23,7 @@ Inicio
  
  Tf <- Celsius * 1.8 + 32
  
- Escreva ("O valor da temperatura em Fahrenheit será de")
+ Escreva ("O valor da temperatura em Fahrenheit serÃ¡ de")
  Escreva (Tf)
- Escreva ("°")
+ Escreva ("Â°")
 Fimalgoritmo
