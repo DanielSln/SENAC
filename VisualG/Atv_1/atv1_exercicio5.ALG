@@ -1,15 +1,15 @@
 Algoritmo "semnome"
 // Disciplina: UC3 ALGORITIMOS
 // Professor: Mateus de Paula Pereira 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Este programa irÃ¡ calcular o valor de um produto com uma % de desconto
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 30/08/2024
 Var
-// Seção de Declarações das variáveis
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
 valor_original, valor_final, desconto : real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 escreva("Informe o valor do produto : R@ ")
 leia(valor_original)
 
