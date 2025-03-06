@@ -1,18 +1,18 @@
 Algoritmo "atv1_exercicioX"
 // Disciplina: UC3 ALGORITIMOS
 // Professor: Mateus de Paula Pereira
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Esse programa calcularÃ¡ a base de um triÃ¢ngulo
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 29/08/2024
 
 Var
-// Seção de Declarações das variáveis
-base : inteiro
-altura : inteiro
-area : inteiro
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+base : real
+altura : real
+area : real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc...
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 escreva ("Informe o valor da altura:")
 leia (altura)
 
@@ -20,8 +20,8 @@ escreva (" Informe o vaLor da base:")
 leia (base)
 
 area <- base * altura
-escreva ("O valor da área será de")
+escreva ("O valor da Ã¡rea serÃ¡ de")
 escreva (area)
-escreva ("m²")
+escreva ("mÂ²")
 
 Fimalgoritmo
