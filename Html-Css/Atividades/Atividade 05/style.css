@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+
+nav {
+    background-color: #21618C ;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navegacao a {
+    color: black;
+    text-decoration: none;
+}
+
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #DAF7A6;
+    padding: 10px;
+}
+
+.Imagens {
+    display: flex;
+}
+
+.imagem {
+    background-color: #1ABC9C;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+img {
+    width: 80%;
+}
+
+.footer {
+    margin: 0;
+    background-color: #21618C;
+    color: #000000;
+    padding: 2px;
+    text-align: center;
+}
