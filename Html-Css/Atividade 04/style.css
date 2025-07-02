@@ -1,0 +1,83 @@
+.header_titulo {
+    text-align: center;
+    background-color: #2874A6;
+    color: white;
+    padding: 5px;
+}
+
+.header_subtitulo {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+nav {
+    padding: 10px;
+    text-align:center;
+}
+
+.navbar {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 20px;
+    text-decoration:none;
+    color: black;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #2874A6;
+    color: white;
+}
+
+main {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+
+}
+.titulo_not1 {
+    color:#2874A6;
+    text-align: start;
+    font: Tungsten, sans-serif;
+    margin: right;
+
+}
+
+.img_aspas {
+    margin: right;
+}
+
+.equipe_descricao {
+    display: flex;
+    text-align: justify;
+    font-size: 16px;
+    
+}
+
+aside {
+    width: 30%;
+    max-width: 40%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 1%;
+    border-radius: 10px;
+    font-style: italic;
+    background-color: #2874A6;
+    font-size: 18px;
+}
+
+.titulo_not {
+    text-align: center;
+}
+
+.lista a {
+    color: black;
+}
